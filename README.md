@@ -1,15 +1,15 @@
-
 <p align="center">
     <img src="/wp_github_gos.png" alt="wordpress-qcloud-cos" align="center" />
 </p>
 <p align="center">利用 github api 实现的一个存储附件（图床）的 wordpress 插件</p>
-
 
 ## 前言
 
 本插件核心功能使用了 GitHub API
 
 设置页面和核心业务逻辑主要参考插件 [wordpress-qcloud-cos](https://github.com/sy-records/wordpress-qcloud-cos) 实现，替换了其中 腾讯云 COS 官方 SDK 为 GitHub API
+
+这个版本支持了 PHP8，对于 PHP7.X 及以下版本兼容性未知！
 
 ## 插件特色
 
@@ -25,7 +25,7 @@
 
 从 Github 下载源码，通过 WordPress 后台上传安装，或者直接将源码上传到 WordPress 插件目录 `wp-content/plugins`，然后在后台启用
 
-Github 项目地址: https://github.com/niqingyang/wp-github-gos
+Github 项目地址: https://github.com/xiaoka520/wp-github-gos
 
 修改配置
 
@@ -35,7 +35,7 @@ Github 项目地址: https://github.com/niqingyang/wp-github-gos
 
 特别说明
 
-本插件仅支持PHP 5.4+ 版本
+本插件仅支持 PHP 5.4+ 版本
 
 ## 插件预览
 
@@ -48,4 +48,3 @@ Github 项目地址: https://github.com/niqingyang/wp-github-gos
 这个插件已经加上了替换数据库中之前的旧资源地址链接功能，只需要填好对应的链接即可，如图所示
 
 ![](/screenshot-2.png)
-
