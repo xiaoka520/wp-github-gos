@@ -304,10 +304,14 @@ add_action('wp_delete_file', 'github_delete_remote_file', 100);
 // 当upload_path为根目录时，需要移除URL中出现的“绝对路径”
 function modefiy_img_url($url, $post_id)
 {
-	$upload_path = get_option('upload_path');
-	if ($upload_path === '.') {
-		$url = str_replace(get_home_path(), '', $url);
-	}
+	$home_path = str_replace(array(
+		'/',
+		'\\'
+	), array(
+		'',
+		''
+	), get_home_path());
+	$url = str_replace($home_path, '', $url);
 	return $url;
 }
 
